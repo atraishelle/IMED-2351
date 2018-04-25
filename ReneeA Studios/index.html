@@ -1,53 +1,150 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Rubric 5</title>
-	<link rel="stylesheet" type="text/css" href="renee.css">
+<meta charset="utf-8"/>
+	
+	
+<title>Final</title>
+	
+	
+
+<link rel="stylesheet" type="text/css" href="renee.css">
+
+
 </head>
 
-<body  onload="checkCookie()">
+<body>
 	
 <div class="container">	
 <header>
+
+
 		<h1 id="head">ReneeA Studios</h1>
+	<div class="popup" onclick="myFunction3()">Click me before you leave!
+  <span class="popuptext" id="myPopup">Thank you For Visiting!</span>
+</div>
 </header>
 <aside>
-<ul>
-      <li><a data-img="renee-pic" id="renee" href="#">ReneeA</a></li>
-      <li><a data-img="ill-pic" id="ill" href="#">Illustrations</a></li>
-      <li><a data-img="graph-pic" id="graph" href="#">Graphics</a></li>
-	  <li><a data-img="tem-pic" id="template" href="#">Templates</a></li>
 	
-    
-	<input type="button" value="My Email" onClick="alert('contact@artbyreneea.com')";/>
-	
-	</ul>	 
-
-	
-
-</aside>
-<content>
-	To view my work, click on the menu links on the left, there you will see just a few of my many creations that I have done in the last 2-3 years.<br>
+<button onclick="myFunction()">About</button>
 	<br>
 
- As a Digital Designer, I use programs such as Adobe Illustrator, Photoshop and other programs on my tablet to get the look I wish to achieve. <br>
+<button onclick="myFunction1()">Designs</button>
+	<br>
 
+<button onclick="myFunction2()">Contact</button>
+	<br>
+
+
+	</aside>
+<content>
+	
+
+<div id="myAbout">
+As a self-employed designer and graduate from Northwest Vista College, I, T. Renee Armstrong pride myself in providing the best for my customers. I have been in business for a little over 3 years and I ensure that my clients requests and needs are met and in turn they allow me to work in making their ideas a reality. I believe that every designs should have a purpose but to look good as well. In order to achieve this, I take creative and developmental steps to provide concepts that will in the end assist my clients in branding, marketing and end-products.
+</div>
+
+<div id="myDesign">
+My designs are solely created by me. To reassure my creations are top quality and unique, I only purchase commercial rights to fonts and other details so that my clients are able to use their designs to the fullest. 
+</div>
+	
+<br>
+<div id="container">
+  <form action="/action_page.php">
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="fname">First Name</label>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	<hr>
+	 
+	<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/Kym.jpg" style="width:25%">
+    <img src="images/My Heart belongs to the Catcher.jpg" style="width:20%">
+    <img src="images/Symone'.jpg" style="width:15%">
+    <img src="images/Tina.jpg" style="width:15%">
+	  <img src="images/Woman with Afro.jpg" style="width:15%">
+  
+  </div>
+  <div class="column">
+    <img src="images/Courtneys Logo.png" style="width:15%">
+    <img src="images/LOGO2.jpg" style="width:15%">
+    <img src="images/Plus Only Fashion.png" style="width:15%">
+    <img src="images/14813610_1504982869528856_1425338483_n.jpg" style="width:25%">
+    
+  </div>  
+  <div class="column">
+    <img src="images/Desert.jpg" style="width:15%">
+    <img src="images/Illustration.png" style="width:10%">
+        <img src="images/My Girl.png" style="width:15%">
+    
+  </div>
+  <div class="column">
+    <img src="images/N 1.jpg" style="width:15%">
+    <img src="images/Templates.jpg" style="width:20%">
+    <img src="images/CBT-Flyer.jpg" style="width:15%">
+    <img src="images/mp.png" style="width:15%">
+    <img src="images/Vizual Photography Business Cards.jpg" style="width:20%">
+
+  </div>
+</div>
 	 
 
-    <img class="hide" id="renee-pic" src="images/Renee.jpg" alt="" >
-    <img class="hide" id="ill-pic" src="images/Illustration.png" alt="">
-    <img class="hide" id="graph-pic" src="images/Graphics.png" alt="">
-	<img class="hide" id="tem-pic" src="images/Templates.jpg" alt="">
+	
+
 	
 
 	
 </content>
 	<footer>
-		Copyright 2018 Art By ReneeA
+
+		Copyright 2018 Art By ReneeA<br>
+
+		<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+		
+		
+		
+<div id="map"></div>
+ 
 
 	</footer>
 	</div>
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 29.424122, lng: -98.493629},
+          zoom: 8
+        });
+      }
+    </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf-NxqvrnC90609h97oiE4LMOGFc26fa4&callback=initMap"
+    async defer></script> 
+	
+	
 	<script src="js/renee.js"></script>
+
+	
+	
 </body>
 </html>
